@@ -2,6 +2,8 @@
 //CSC 362, Section 2, 10 am
 //Programming Assignment #2 2/28/20
 
+//cities.c
+
 /*
 A program that gets input from a text file where the text file is arranged like:
 City_Name population square_milage pollution crime expense #_of_highways
@@ -34,7 +36,7 @@ void main()
 	double highestLivability = 0, totalLivability = 0;
 	char bestCity[50];
 
-	inputFile = fopen("cities2.txt", "r"); //Opens input file
+	inputFile = fopen("C:\\Users\\cjbas\\Desktop\\Programming Assignments\\362Assignment2\\cities2.txt", "r"); //Opens input file
 	printf("City \t\t\t Population Density \t\t\t Livability Score\n");
 	while (getInput(inputFile, cityName, &population, &sqMileage, &pollution, &crime, &expense, &highwayAmt) == 7) //getInput returns fscanf which returns amount of elements assigned. Once it's not 7, program is done
 	{
